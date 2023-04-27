@@ -1,4 +1,4 @@
-// C Program for Message Queue (Reader Process)
+// C Program for Shared Memory (Reader Process)
 
 #include<stdio.h>  
 #include<stdlib.h>  
