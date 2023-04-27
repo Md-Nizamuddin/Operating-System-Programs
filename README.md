@@ -16,3 +16,6 @@ The Included topics in this repository are:
     6. Mutual Exclusion
     7. Reader Writer Problem
     8. Dining Philosopher Problem
+
+Check the comments and description before using each file
+The Week Number may vary to Exercise Number
