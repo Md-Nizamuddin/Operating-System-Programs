@@ -1,4 +1,4 @@
-// C Program for Shared Memory (Writer Process)
+// C Program for Shared Memory  (Writer Process)
 
 #include<stdio.h>  
 #include<stdlib.h>  
