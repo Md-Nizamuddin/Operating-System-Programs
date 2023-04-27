@@ -1,4 +1,4 @@
-//Q1. Mutual Exclusion - System V Semaphore
+//Q1.  Mutual Exclusion - System V Semaphore
 
 #include <semaphore.h>
 #include <stdio.h>
