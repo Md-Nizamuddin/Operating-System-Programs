@@ -24,5 +24,5 @@ return 0;
 // --output--
 
 // Before fork a=5 b=10 
-// In child a=6 b=11 
+// In child  a=6 b=11 
 // In Parent a=4 b=9
