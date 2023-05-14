@@ -9,16 +9,16 @@ int main()
 {
     char buff[25];
     int rfd,wfd;
-    mkfifo("fif1",O_CREAT|0644);
+    mkfifo("fifo",O_CREAT|0644);
     if (fork()==0)
     {
         printf("Child writing into FIFO\n");
-        wfd=open("fif1",O_WRONLY);
+        wfd=open("fifo",O_WRONLY);
         write(wfd,"Hello",6);
     }
     else
     {
-        rfd=open("fif1",O_RDONLY);
+        rfd=open("fifo",O_RDONLY);
         read(rfd,buff,6);
         printf("Parent reads from FIFO : %s\n",buff);
     }
