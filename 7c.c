@@ -18,9 +18,10 @@ int main()
     }
     else
     {
+        printf("Parent reads from FIFO : ")
         rfd=open("fifo",O_RDONLY);
         read(rfd,buff,6);
-        printf("Parent reads from FIFO : %s\n",buff);
+        printf("%s\n",buff);
     }
 return 0;
 } 
