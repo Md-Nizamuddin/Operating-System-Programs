@@ -17,6 +17,7 @@ int main()
 	int msgid;
 	key = ftok("progfile", 65);
 	msgid = msgget(key, 0666 | IPC_CREAT);
+	
 	message.mesg_type = 1;
 	printf("Write Data : ");
 	fgets(message.mesg_text,MAX,stdin);
