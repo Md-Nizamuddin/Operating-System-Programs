@@ -20,12 +20,11 @@ void *reader(void* param)
     sem_post(&x);
     printf("%d reader is inside\n",readercount);
     usleep(3);
+    
     sem_wait(&x);
     readercount--;
     if(readercount==0)
-    {
         sem_post(&y);
-    }
     sem_post(&x);
     printf("%d Reader is leaving\n",readercount+1);
     return NULL;
@@ -47,7 +46,7 @@ int main()
     printf("Enter the number of readers:");
     scanf("%d",&n2);
     printf("\n");
-    int n1[n2];
+    
     sem_init(&x,0,1);
     sem_init(&y,0,1);
     for(i=0;i<n2;i++)
